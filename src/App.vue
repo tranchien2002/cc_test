@@ -1,31 +1,77 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
+  background-color: #2c3e50;
+}
+
+.actions {
+  padding: 5px;
+  margin: 5px;
   text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+  color: white;
+  font-family: Menlo;
+  font-size: 15px;
 }
 
-#nav a {
+.toggle-btn {
+  padding: 5px;
+  margin: 5px;
+  background-color: #209900;
+  cursor: pointer;
+  -webkit-user-select: none;
+}
+
+#options,
+.lane-info-wrapper {
+  background-color: #ecf0f1;
+  width: 1260px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.lane-info {
+  text-align: center;
+  font-size: 20px;
   font-weight: bold;
-  color: #2c3e50;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.lane-l-info,
+.lane-r-info {
+  font-weight: bold;
+}
+
+.lane-l-info {
+  padding-right: 25px;
+}
+
+.lane-r-info {
+  padding-left: 25px;
+}
+
+#gameCanvas {
+  background-color: #ecf0f1;
+}
+
+.team-wrapper {
+  width: 50%;
+  float: left;
+}
+
+.right-team {
+  text-align: right;
+}
+
+.role {
+  font-weight: bold;
+  width: 200px;
+}
+
+.info-input {
+  width: 60px;
 }
 </style>

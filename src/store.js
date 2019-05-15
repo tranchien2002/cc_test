@@ -4,13 +4,11 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
-
-  },
+  state: {},
   mutations: {
-
+    updateHeroAttr (state, payload) {
+      console.log('updateHeroAttr', payload)
+    }
   },
-  actions: {
-
-  }
+  actions: {}
 })
